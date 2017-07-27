@@ -1,5 +1,5 @@
 {
-  "name": "bsa-2016-react-demo",
+  "name": "bsa-2017-react",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -9,11 +9,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/oleksandrkovalov/bsa-2016-react-demo.git"
+    "url": "https://github.com/Client-Z/BSA-8-React"
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/oleksandrkovalov/bsa-2016-react-demo#readme",
+  "homepage": "https://github.com/Client-Z/BSA-8-React#readme",
   "dependencies": {
     "babel-cli": "^6.5.2",
     "babel-core": "^6.11.4",
