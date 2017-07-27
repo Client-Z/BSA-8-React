@@ -19,7 +19,7 @@ class UserAdd extends Component {
         this.setState({name: event.target.value})
     }
 
-    handleUserSubmit(event) {
+    handleSubmit(event) {
         event.preventDefault();
 
         let name = this.state.name;
@@ -35,7 +35,7 @@ class UserAdd extends Component {
 
     render() {
         return (
-            <form className="createUserForm" onSubmit={this.handleUserSubmit}>
+            <form className="createUserForm" onSubmit={this.handleSubmit}>
                 <input
                     type="text"
                     placeholder={this.state.placeholder}
