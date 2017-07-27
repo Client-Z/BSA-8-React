@@ -40,7 +40,7 @@ class UsersContainer extends Component {
         return (
             <div className="container">
                 <UserAdd onUserSubmit={ this.handleUserSubmit } />
-                <UserList/>
+                <UserList userList={this.state.userList} deleteUser={ this.deleteUser}/>
             </div>
         );
     }
