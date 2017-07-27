@@ -1,6 +1,5 @@
 import React, {Component}  from  "react";
 
-//import "../style/users.css";
 
 class User extends Component {
     constructor(props) {
@@ -17,7 +16,8 @@ class User extends Component {
     render() {
         return (
           <li className="user">
-            <span>{ this.props.name }</span><button onClick={this.handleDeleteUser}>Delete User</button>
+            <span>{ this.props.name }</span>
+              <button onClick={this.handleDeleteUser} className="buttonDelete">Delete User</button>
           </li>
         );
     }

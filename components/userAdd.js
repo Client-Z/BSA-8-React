@@ -1,5 +1,5 @@
 import React, {Component}  from  "react";
-//import "../style/createUserForm.css";
+
 
 class UserAdd extends Component {
     constructor(props) {
@@ -21,7 +21,6 @@ class UserAdd extends Component {
 
     handleSubmit(event) {
         event.preventDefault();
-
         let name = this.state.name;
 
         if( name.length < 2 ) {
@@ -38,14 +37,15 @@ class UserAdd extends Component {
             <form className="createUserForm" onSubmit={this.handleSubmit}>
                 <input
                     type="text"
+                    className="inputName"
                     placeholder={'write here...' || this.state.placeholder}
                     value={this.state.name}
                     onChange={this.handleUserNameChange}
                 />
-                <input type="submit" value="Add" />
+                <input type="submit" value="Add" className="buttonSubmit" />
             </form>
         )
     }
-
 }
+
 export default UserAdd;
