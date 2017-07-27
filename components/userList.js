@@ -14,7 +14,7 @@ class UserList extends Component {
 
         return (
             <ul className="user-list">
-                <li className="user-item"> { userItem } </li>
+                { userItem }
             </ul>
         );
     }

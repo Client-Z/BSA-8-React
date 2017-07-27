@@ -8,10 +8,10 @@ class UserAdd extends Component {
         this.state = {
             name: '',
             id: '',
-            placeholder: ''
+            placeholder: 'write here...'
         }
 
-        this.handleUserSubmit = this.handleUserSubmit.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
         this.handleUserNameChange = this.handleUserNameChange.bind(this);
     }
 
@@ -38,11 +38,11 @@ class UserAdd extends Component {
             <form className="createUserForm" onSubmit={this.handleSubmit}>
                 <input
                     type="text"
-                    placeholder={this.state.placeholder}
+                    placeholder={'write here...' || this.state.placeholder}
                     value={this.state.name}
                     onChange={this.handleUserNameChange}
                 />
-                <input type="submit" value="Добавить" />
+                <input type="submit" value="Add" />
             </form>
         )
     }

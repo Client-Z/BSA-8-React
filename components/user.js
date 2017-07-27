@@ -1,6 +1,6 @@
 import React, {Component}  from  "react";
 
-//import "../style/user.css";
+//import "../style/users.css";
 
 class User extends Component {
     constructor(props) {
@@ -16,10 +16,9 @@ class User extends Component {
 
     render() {
         return (
-          <div className="user">
-            <span>{ this.props.id }</span> - <span>{ this.props.name }</span>
-              <button onClick={this.handleDeleteUser}>Delete User</button>
-          </div>
+          <li className="user">
+            <span>{ this.props.name }</span><button onClick={this.handleDeleteUser}>Delete User</button>
+          </li>
         );
     }
 }
