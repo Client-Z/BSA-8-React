@@ -1,4 +1,4 @@
-# BSA-8-React / Part 1
+# Try-React / Part 1
 
 ## Задание:
 
